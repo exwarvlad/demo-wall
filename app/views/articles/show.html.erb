@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @article.user.name %>
+</p>
+
+<p>
+  (<%= l(@article.created_at, format: :short) %>)
+  <strong>Body:</strong>
+  <%= @article.body %>
+</p>
+
+<%= render partial: "comments/template", locals: {
+    commentable: @article, new_comment: @comment
+} %>
+
+<% if current_user == @article.user %>
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+<% end %>
+
+<%= link_to 'Back', articles_path %>
