@@ -12,7 +12,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   def show
     @new_comment = Comment.build_from(@article, current_user.id, "")
-    @article.root_comments.reverse!
   end
 
   # GET /articles/new
