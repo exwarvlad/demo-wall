@@ -12,6 +12,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   def show
     @new_comment = Comment.build_from(@article, current_user.id, "")
+    @comments = @article.root_comments.order("created_at ASC")
   end
 
   # GET /articles/new
