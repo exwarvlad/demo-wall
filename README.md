@@ -1,8 +1,7 @@
 ## Описание
 Тестовое задание (реализация стены сообщений + древовидные комментарии)  
 Вход только через facebook
-## Демо  
-https://demo-wall.herokuapp.com  
+
 ## Запуск 
 Для разворачивания своей копии, клонируйте репозиторий `git clone git@github.com:exwarvlad/demo-wall.git`  
 или просто [скачайте](https://github.com/exwarvlad/demo-wall/archive/master.zip)  
